@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EMI Calculator</string>
+
+    <string name="txtBankName"> CICIC Bank Ltd.</string>
+    <string name="txtName">Principal Amount</string>
+    <string name="txtROI">Rate of Interest(%)</string>
+    <string name="txtYear">No. of Years</string>
+    <string name="btnCal">Calculate</string>
+    <string name="txtEMI">Your EMI : Rs.</string>
+    <string name="txtAnswer"></string>
+    <string name="blank"></string>
+</resources>

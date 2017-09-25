@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="karanke.net.emicalculator.MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtBankName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="41dp"
+        android:text="@string/txtBankName" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:text="@string/txtName"
+        android:layout_below="@+id/txtBankName"
+        android:layout_toStartOf="@+id/edPAmount"
+        android:layout_marginEnd="19dp" />
+
+    <EditText
+        android:id="@+id/edPAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtName"
+        android:layout_alignBottom="@+id/txtName"
+        android:layout_alignStart="@+id/txtBankName"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/blank"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/txtROI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="@string/txtROI"
+        android:layout_below="@+id/edPAmount"
+        android:layout_alignStart="@+id/txtName" />
+
+    <EditText
+        android:id="@+id/edROI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edPAmount"
+        android:layout_below="@+id/edPAmount"
+        android:layout_marginTop="59dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/blank"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtBankName"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="87dp"
+        android:text="@string/btnCal" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtROI"
+        android:layout_below="@+id/edROI"
+        android:layout_marginTop="44dp"
+        android:text="@string/txtYear" />
+
+    <EditText
+        android:id="@+id/edYears"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edROI"
+        android:layout_below="@+id/edROI"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/blank"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/txtEMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:text="@string/txtEMI" />
+
+    <TextView
+        android:id="@+id/txtAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtEMI"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/btnCalculate"
+        android:text="@string/txtAnswer" />
+</RelativeLayout>
